@@ -2,7 +2,7 @@ function reportChecker(e) {
     const activeSheet = e.source.getActiveSheet();
     const sheetName = activeSheet.getName();
   
-    const emailAddress = 'email@email.com'; // Email address goes here.
+    const emailAddress = 'email@email.com'; 
     const subject = 'Google Sheet Modified';
     
     const userEmail = Session.getEffectiveUser().getEmail();
@@ -16,7 +16,6 @@ function reportChecker(e) {
   }
   
   function createTrigger() {
-    // Trigger, but you could ignore this function and use the default triggers that Google App Scripts have to offer.
     ScriptApp.newTrigger('reportChecker')
       .forSpreadsheet(SpreadsheetApp.getActiveSpreadsheet())
       .onEdit()

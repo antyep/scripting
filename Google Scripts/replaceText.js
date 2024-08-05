@@ -1,6 +1,3 @@
-// Simple script made to replace text, since it is a manual job, I am looking to minimize the human error.
-// It automatically updates once the field is filled in the Sheet to avoid mistakes has a "onSave" trigger in Google App Scripts.
-
 function replaceTextInSheet(sheet, replaceNewText, newText) {
     const data = sheet.getDataRange().getValues();
     const updatedData = data.map(row => 

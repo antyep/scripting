@@ -4,10 +4,6 @@ Created on Mon May 27 09:06:17 2024
 @author: antonioyepez
 """
 
-# This script uses langdetect library which uses Google Translate, it verifies every language and if there is any word in a different language
-# It will fill the row in red, it does verify it from an Excel file that specifies the language. (Openpyxl styles to modify the output excel)
-
-
 import os
 import pandas as pd
 from openpyxl import load_workbook, Workbook

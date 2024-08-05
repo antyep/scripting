@@ -1,6 +1,3 @@
-  // Script made to work from Monday to Friday with a trigger at 1AM everyday. 
-  // Once we are in that hour the script moves all the data to another Sheet in the same file and clears the current day sheet.
-
 function transferClearConsultations() {
     const currentDay = new Date().getDay();
     const shouldExecute = currentDay >= 1 && currentDay <= 5;

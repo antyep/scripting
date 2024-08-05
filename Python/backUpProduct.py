@@ -1,3 +1,9 @@
+"""
+Created on Wed May 02 10:44:11 2024
+
+@author: antonioyepez
+"""
+
 import os
 import datetime
 from google.oauth2 import service_account
@@ -5,11 +11,9 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 import io
 
-# This script creates a back-up from a Google Sheet to a Google Drive. (It requires Scopes and service account)
+SERVICE_ACCOUNT_FILE = 'key.json'  
 
-SERVICE_ACCOUNT_FILE = 'key.json' # Service account
-
-SCOPES = ['https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/spreadsheets']
+SCOPES = ['https:www.googleapis.com/auth/drive', 'https:www.googleapis.com/auth/spreadsheets']
 
 SHEET_ID = '1crrVoR9Xwq1TRWoZjeDW6e-DtTDablNPnRvEOxFbfJE'
 PRODUCT_FOLDER_NAME = 'Product'

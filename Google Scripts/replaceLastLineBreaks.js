@@ -1,6 +1,3 @@
-// Simple script to avoid line breaks and replace them for "/".
-// Was made to have the same size in all rows or otherwise when the data is introduce it will resize depending on the data it has.
-
 function replaceLastLineBreaks() {
     const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
     const sheet = spreadsheet.getSheetByName("Consultas sin respuesta");

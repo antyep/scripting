@@ -4,8 +4,6 @@ Created on Wed May 29 17:13:07 2024
 @author: antonioyepez
 """
 
-# Script made to verify a main file (Excel) and generate 1 file per language, in this case, 9 languages.
-
 import pandas as pd
 import os
 

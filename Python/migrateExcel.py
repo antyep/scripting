@@ -1,7 +1,3 @@
-# I created this Script for cooperative work, some information was given in Excel, which does not facilitate real time co-working.
-
-# Scripts moves everything the excel has to a Google Sheet. You require Google Cloud services to use it properly.
-
 """
 Created on Mon Feb 13 11:03:12 2024
 
@@ -12,8 +8,8 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-SCOPES = ['https://www.googleapis.com/auth/drive']
-SERVICE_ACCOUNT_FILE = 'key.json' # Service account token
+SCOPES = ['https:www.googleapis.com/auth/drive']
+SERVICE_ACCOUNT_FILE = 'key.json'
 
 credentials = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
